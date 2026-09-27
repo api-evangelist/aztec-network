@@ -1,0 +1,51 @@
+generated: 2026-09-27
+method: probed
+source: https://aztec.network/privacy-policy
+
+signals:
+  data_subject_request:
+    - source: https://aztec.network/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "You have the right to know whether and how we process Personal Data about you and request a copy of such Personal Data;"
+      section: "Your Choices And Rights Over Your Personal Data"
+      note: "Provides data access and copy rights."
+    - source: https://aztec.network/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "You can request that we correct or supplement it by emailing us and explaining why the Personal Data is inaccurate or incomplete;"
+      section: "Your Choices And Rights Over Your Personal Data"
+      note: "Allows rectification of data."
+    - source: https://aztec.network/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "You can request that we erase some or all of the Personal Data we process about you;"
+      section: "Your Choices And Rights Over Your Personal Data"
+      note: "Provides right to erasure."
+    - source: https://aztec.network/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "You can request the transfer of your Personal Data to a third party, in certain circumstances and with certain exceptions;"
+      section: "Your Choices And Rights Over Your Personal Data"
+      note: "Provides data portability."
+  subprocessors:
+    - source: https://aztec.network/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "We may collect additional data from third parties such as messaging services (e.g., Discord) or other third‑party websites (e.g., LinkedIn). As we do not control third‑party websites where these are involved, please refer to their respective privacy notices."
+      section: "Information Collected from Third Parties"
+      note: "Acknowledges use of subprocessors third‑party services."
+  incident_notification:
+    - source: https://aztec.network/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "In addition, we will use some or all of the above information to comply with any applicable legal obligations, to enforce any applicable terms and conditions and/ or terms of service, and to protect or defend the Services, our rights, the rights of our users, or others."
+      section: "Why And How We Use Your Personal Data"
+      note: "Implied obligation to notify in case of legal obligations, but no explicit breach notification clause found."
+  data_retention:
+    - source: https://aztec.network/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "We will use your Personal Data in order to perform our contract with you, other content, and Website functionality."
+      section: "Why And How We Use Your Personal Data"
+      note: "No explicit retention period stated."

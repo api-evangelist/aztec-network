@@ -1,0 +1,26 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.aztec.network/developers/docs/resources/migration_notes
+sources:
+- https://docs.aztec.network/developers/docs/resources/migration_notes
+- https://docs.aztec.network/developers/tags/migration
+entries:
+- breaking: true
+  highlights:
+  - Note types declared inside a contract must be pub.
+  - Noir v1.0.0‑beta.25 enforces the caller's visibility when comptime code resolves a trait method into a typed expression.
+  - The sequencer skips building and proposing a checkpoint when p2p is enabled and it is connected to fewer than SEQ_MIN_PEERS_TO_PROPOSE peers
+    (default 1).
+  - JSON‑RPC internal errors now return code -32603 instead of -32600.
+- breaking: true
+  highlights:
+  - History note nullification helpers renamed and restricted to own‑contract notes.
+  - Old helpers have been renamed with a local_ prefix and now assert that the note belongs to the executing contract.
+  - set_as_fee_payer now asserts it is called during the setup phase.
+  - PXE stores are now selected by (l1ChainId, rollupAddress, schemaVersion) instead of being wiped on mismatch.
+current_version: 5.2.0
+note: Versioning scheme follows semantic versioning (major.minor.patch). Only the three most recent version sections (5.2.0, 5.0.1, 5.0.0) are
+  listed, each containing up to four highlight sentences extracted directly from the migration notes page. 1 extracted row(s) were dropped because
+  their quote was not on the page.
+docs: https://docs.aztec.network/developers/docs/resources/migration_notes

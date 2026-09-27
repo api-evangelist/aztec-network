@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "@vocab": "https://aztec.network/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "aztec": "https://aztec.network/schema#",
+    "PostRequest": "aztec:PostRequest",
+    "jsonrpc": {
+      "@id": "aztec:jsonrpc",
+      "@type": "xsd:string"
+    },
+    "method": {
+      "@id": "aztec:method",
+      "@type": "xsd:string"
+    },
+    "params": {
+      "@id": "aztec:params",
+      "@container": "@list"
+    },
+    "id": {
+      "@id": "aztec:id",
+      "@type": "xsd:integer"
+    },
+    "GetStatusResponse": "aztec:GetStatusResponse",
+    "ok": {
+      "@id": "aztec:ok",
+      "@type": "xsd:boolean"
+    },
+    "components": {
+      "@id": "aztec:components"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Aztec Network API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Aztec Network's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-09-27) from openapi/_ae-authored/aztec-network-openapi-generated.yml.",
+  "dcterms:created": "2026-09-27",
+  "dcterms:source": [
+    "openapi/_ae-authored/aztec-network-openapi-generated.yml"
+  ]
+}

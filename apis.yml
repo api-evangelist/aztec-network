@@ -1,23 +1,114 @@
 aid: aztec-network
+
 name: Aztec Network
-description: 'Aztec Network is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/6847005bc403085c1aa846e0/689cacb514469cdab7b6c2cf_Aztec-cover.png
+
+description: Aztec Network is a decentralized, privacy‑preserving layer‑2 scaling solution on Ethereum. It enables developers to build applications
+  with end‑to‑end privacy using its Noir programming language and zero‑knowledge proofs. The network focuses on composable privacy, programmable
+  proof systems, and open‑source tooling, aiming to bring confidential smart contracts and private transactions to mainstream blockchain use cases.
+
 url: https://raw.githubusercontent.com/api-evangelist/aztec-network/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Blockchain
+- Privacy
+- Layer2
+- Ethereum
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: GettingStarted
+  url: https://docs.aztec.network/developers/getting_started_on_local_network
+- type: Spectral
+  url: rules/aztec-network-rules.yml
+- type: JSONLD
+  url: json-ld/aztec-network-context.jsonld
+- type: Vocabulary
+  url: vocabulary/aztec-network-vocabulary.yml
+- type: DataModel
+  url: data-model/aztec-network-data-model.yml
+- type: ChangeLog
+  url: changelog/aztec-network-changelog.yml
+- type: Conformance
+  url: conformance/aztec-network-conformance.yml
+- type: LLMsTxt
+  url: llms/aztec-network-llms.txt
+- type: Hosts
+  url: hosts/aztec-network-hosts.yml
+- type: Vendors
+  url: vendors/aztec-network-vendors.yml
+- type: Newsroom
+  url: https://aztec.network/media
+- type: DomainSecurity
+  url: security/aztec-network-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://aztec.network/
+- type: DeveloperPortal
+  url: https://aztec.network/developers
+- type: Documentation
+  url: https://docs.aztec.network/
+- type: APIReference
+  url: https://docs.aztec.network/developers/docs/aztec-js
+- type: Support
+  url: https://discord.gg/aztec
+- type: Blog
+  url: https://aztec.network/blog
+- type: GitHubOrganization
+  url: https://github.com/AztecProtocol
+- type: Roadmap
+  url: https://aztec.network/roadmap
+- type: TermsOfService
+  url: https://aztec.network/terms-of-service
+- type: PrivacyPolicy
+  url: https://aztec.network/privacy-policy
+
+apis:
+- aid: aztec-network:aztec-network-api
+  name: Aztec Network API
+  description: 'Aztec Network API as documented publicly: 4 operations. Contract generated from the documentation by API Evangelist (2026-09-27);
+    not the provider''s own document.'
+  humanURL: https://docs.aztec.network/developers/docs/resources/migration_notes
+  baseURL: https://install.aztec.network
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/aztec-network-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/aztec-network-get-status-response-schema.json
+  - type: JSONSchema
+    url: json-schema/aztec-network-post-request-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Developer documentation on docs.aztec.network provides no OpenAPI, AsyncAPI, GraphQL, gRPC, or WSDL specifications.
+  evidence:
+  - url: https://docs.aztec.network/openapi.json
+    status: 404
+  checked: 2026-09-27
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 19
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
