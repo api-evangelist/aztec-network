@@ -1,0 +1,23 @@
+{
+  "provider": "aztec-network",
+  "sources": [
+    "_ae-authored/aztec-network-openapi-generated.yml"
+  ],
+  "outputs": [
+    "aztec-network-aztec-network-api-api-openapi.yml",
+    "aztec-network-status-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "aztec-network-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "aztec-network-openapi-generated.yml: tagged paths GET / -> Aztec Network API",
+    "aztec-network-openapi-generated.yml: tagged paths POST / -> Aztec Network API",
+    "aztec-network-openapi-generated.yml: tagged paths GET /5.2.0 -> Aztec Network API",
+    "aztec-network-openapi-generated.yml: declared missing tag: Aztec Network API",
+    "apis.yml register: written (+2 apis, 2 total)"
+  ],
+  "skipped": []
+}
