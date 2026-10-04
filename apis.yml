@@ -23,7 +23,17 @@ created: '2026-09-27'
 
 modified: '2026-09-27'
 
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
+x-docs-hosting: netlify
 tags:
+- Company
+- Blockchain
+- Privacy
+- Layer 2
+- Ethereum
+tags_raw:
 - Company
 - Blockchain
 - Privacy
